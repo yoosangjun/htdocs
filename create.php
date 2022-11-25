@@ -33,16 +33,10 @@
     <ol>
         <?=$title?>
     </ol>  
-    <a href="create.php">create</a>
-    <h2>
-        <?php
-        echo $article['title'];
-    ?>
-    </h2>
-    <p><?php
-       
-           echo $article['description'];
-            
-    ?></p>
+    <form action="process_create.php" method="POST">
+       <p><input type="text" name="title" id="" placeholder="title"></p>
+       <p><textarea name="description" id="" cols="30" rows="10" placeholder="description"></textarea></p>
+       <p><input type="submit" value="작성완료"></p>
+    </form>
 </body>
 </html>
