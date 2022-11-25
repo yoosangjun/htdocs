@@ -11,8 +11,8 @@
     'description'=>'18181818'
  );  
  if(isset($_GET['id'])){
-    $sql2 = "SELECT * FROM topic WHERE id={$_GET['id']}";    
- $result = mysqli_query($conn,$sql2); 
+    $sql3 = "SELECT * FROM topic WHERE id={$_GET['id']}";    
+ $result = mysqli_query($conn,$sql3); 
  $row = mysqli_fetch_array($result);
  $article['title'] = $row['title'];
  $article['description'] = $row['description'];
